@@ -32,7 +32,6 @@ HTML = """
       font-size: 18px;
       color: #333;
     }
-
     .spinner {
       border: 6px solid #f3f3f3;
       border-top: 6px solid #007bff;
@@ -42,15 +41,10 @@ HTML = """
       animation: spin 1s linear infinite;
       margin-bottom: 10px;
     }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+    @keyframes spin { 0% {transform: rotate(0);} 100% {transform: rotate(360deg);} }
   </style>
 
   <script>
-    // Show loader on form submit
     function showLoader() {
       document.getElementById("loader").style.display = "flex";
     }
@@ -67,7 +61,6 @@ HTML = """
     <button type="submit">Search</button>
   </form>
 
-  <!-- Loader overlay -->
   <div id="loader">
     <div class="spinner"></div>
     <div>Processing your PDF... Please wait.</div>
