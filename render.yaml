@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: ocr-name-search
+    env: docker
+    plan: free
