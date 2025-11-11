@@ -4,6 +4,8 @@ A Flask web app that performs OCR on uploaded PDFs (Hindi/English) and searches 
 
 Includes Tesseract + Poppler in a lightweight Docker container for easy deployment on Render.com.
 
+## To run locally use --> standalone.py
+
 ---
 
 ## 🚀 Deploy on Render (Free)
@@ -32,3 +34,4 @@ cd ocr-name-search
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
